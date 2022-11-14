@@ -42,27 +42,35 @@ int main() {
     }
 
     visit(a);
-/*
+    
     int err3 = headInsert(&a, 6);
     if(err3){
         printf("\nErrore, l'array è già pieno.");
         return 1;
     }
+    
+    visit(a);
 
     int err4 = headDelete(&a);
     if(err4){
         printf("\nErrore, l'array è vuoto.");
     }
 
+    visit(a);
+    
     int err5 = tailInsert(&a, 8);
     if(err5){
         printf("\nErrore, l'array è pieno.");
     }
+    
+    visit(a);
 
     int err6 = tailDelete(&a);
     if(err6){
         printf("\nErrore, l'array è vuoto.");
     }
+    
+    visit(a);
 
     Boolean res = search(a, 5);
     if(res){
@@ -70,7 +78,8 @@ int main() {
     }else{
         printf("\nIl valore non e' contenuto nella lista");
     }
-*/
+    
+    visit(a);
 
     return 0;
 }
