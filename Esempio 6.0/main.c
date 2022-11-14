@@ -16,7 +16,7 @@ int main() {
     arrayCompact(&V, dim, &count);
 
     for(int i=0; i<dim; i++){
-        printf("\n%d", V[i]);
+        printf("%d\n", V[i]);
     }
 
     return 0;
