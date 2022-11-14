@@ -1,10 +1,9 @@
-#include <stdio.h>
-
 /*
     Definire la funzione in C che riceve come parametri un valore N e acquisisce
     numeri interi da tastiera finché gli ultimi N numeri interi inseriti non sono uguali
 */
 
+#include <stdio.h>
 void check(int N);
 
 int main() {
