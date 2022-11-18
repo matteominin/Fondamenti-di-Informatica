@@ -40,11 +40,21 @@ void arrayShift(int *A, int dim, int **V, int K, int LR){
         int tmp, shift;
         for(int i=0; i<K; i++){
             shift = (*V)[0];
-            printf("%d\n", shift);
 
             for(int j=0; j<dim; j++){
                 tmp = (*V)[(j+1)%dim];
                 (*V)[(j+1)%dim] = shift;
+                shift = tmp;
+            }
+        }
+    }else{      //shift verso sinistra
+        int shift, tmp;
+        for(int i=0; i<K; i++){
+            shift = (*V)[dim - 1];
+
+            for(int j=dim - 1; j>=0; j--){
+                tmp = (*V)[(j-1+dim)%dim];
+                (*V)[(j-1+dim)%dim] = shift;
                 shift = tmp;
             }
         }
